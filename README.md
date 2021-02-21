@@ -1,7 +1,7 @@
 # Farmers-Market
 
 A grocery checkout system for a Farmer's Market simulation. 
-
+```
 +--------------|--------------|---------+
 | Product Code |     Name     |  Price  |
 +--------------|--------------|---------+
@@ -11,6 +11,7 @@ A grocery checkout system for a Farmer's Market simulation.
 |     MK1      |   Milk       |  $4.75  |
 |     OM1      |   Oatmeal    |  $3.69  |
 +--------------|--------------|---------+
+```
 
 This week, we’re celebrating our one year anniversary and would like to offer the
 following specials.  To do so, we’ll need to update our checkout system to apply

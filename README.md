@@ -1,6 +1,5 @@
 # Farmers-Market
 
-A grocery checkout system for a Farmer's Market simulation. 
 ```
 +--------------|--------------|---------+
 | Product Code |     Name     |  Price  |

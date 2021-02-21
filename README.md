@@ -24,3 +24,5 @@ the following rules.
 
 At any time, we are able to print out the current register to see what the state of
 the basket is.  This will include the price and the applied discount or special, if any.
+
+*To run program - run main.py*

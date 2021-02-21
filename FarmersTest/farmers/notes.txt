@@ -1,0 +1,13 @@
+1. items
+    - product code, name, and price
+2. cart
+    - list of items, discounts, total calculator
+        - discounts
+            - set the rule for the discount when reading the list of items
+            - set a counter for the discount, check each time if that discount count has any value, print and apply the discount
+3. utility functions
+    - print receipt, print product table, 
+    - user input
+        - end of cart, ask if they're done and would like to pay
+
+

@@ -126,6 +126,37 @@ class Register():
                     f += 1        
             i+=1
     
+    def double_discount(self):
+        # check to see if more than one discount was applied on a single grocery item.
+        # if so, only apply the higher discount
+
+        i = 0 
+        while i < len(self.cart):
+            if self.cart[i].name == '' and self.cart[i+1].name == '': #if there are two discounts in a row (indicating two discounts on one item)
+                #check to see which discount is greater
+                if self.cart[i].discount < self.cart[i+1].discount: 
+                    self.cart.remove(self.cart[i+1])
+                elif self.cart[i].discount > self.cart[i+1].discount:
+                    self.cart.remove(self.cart[i])
+            i+=1
+
+
+        # directly checking for apom and appl discount method:
+        # count_apom = 0
+        # count_appl = 0
+        # for item in self.cart:
+        #     if item.discount == "APOM":
+        #         count_apom += 1
+        #     elif item.discount == "APPL":
+        #         count_appl += 1
+        
+        # while count_apom >= 1 and count_appl >= 1: #if there's an apom discount 
+        #     for item in self.cart:
+        #         if item.discount == "APPL":
+        #             self.cart.remove(item)
+        #             count_apom -= 1
+        #             break
+
     def calculateTotal(self):
         for item in self.cart:
             self.total += item.price

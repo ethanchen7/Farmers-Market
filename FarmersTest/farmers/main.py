@@ -13,21 +13,23 @@ for item in cart:
 cart[0][0]
 '''
 
-printMenu()
-print("Hello! Welcome to the Farmer's Market.")
-new_checkout = Register()
-cart = new_checkout.addtoCart()
-new_checkout.bogo_discount()
-new_checkout.apple_discount()
-new_checkout.chai_milk_discount()
-new_checkout.oatmeal_apple_discount()
-header()
-try:
-    for items in cart:
-        print(items)
-except NoneType:
-    print("You didn't add anything to the basket! Please come back again.")
-new_checkout.calculateTotal()
+if __name__ == "__main__":
+    printMenu()
+    print("Hello! Welcome to the Farmer's Market.")
+    new_checkout = Register()
+    cart = new_checkout.addtoCart()
+    new_checkout.bogo_discount()
+    new_checkout.apple_discount()
+    new_checkout.chai_milk_discount()
+    new_checkout.oatmeal_apple_discount()
+    new_checkout.double_discount()
+    header()
+    try:
+        for items in cart:
+            print(items)
+    except NoneType:
+        print("You didn't add anything to the basket! Please come back again.")
+    new_checkout.calculateTotal()
 
 
 

@@ -1,4 +1,6 @@
 import json
+import os
+
 
 def printMenu():
     print('+'+'--------------- '+'|'+' --------------- '+'|'+ ' ---------'+ '+')
@@ -38,7 +40,8 @@ class Register():
         self.total = 0
 
     def loadMenu(self):
-        with open('menu.json') as f:
+        __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
+        with open(os.path.join(__location__,'menu.json')) as f:
             self.data = json.load(f)
 
     def createItem(self,code):

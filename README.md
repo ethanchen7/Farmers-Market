@@ -24,4 +24,22 @@ the following rules.
 At any time, we are able to print out the current register to see what the state of
 the basket is.  This will include the price and the applied discount or special, if any.
 
-*To run program - run main.py*
+# Running the Program with Docker - Instructions
+
+In your command prompt/terminal,
+
+1. Clone the repo
+'''
+git clone https://github.com/ethanchen7/Farmers-Market.git
+'''
+
+2. Build the docker image (note the period (".") after "instance")
+'''
+cd Farmers-Market
+docker build -t instance .
+'''
+3. Run the container
+'''
+docker run -it --rm instance
+'''
+4. Test out the program!

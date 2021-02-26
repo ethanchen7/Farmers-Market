@@ -29,17 +29,17 @@ the basket is.  This will include the price and the applied discount or special,
 In your command prompt/terminal,
 
 1. Clone the repo
-'''
+```
 git clone https://github.com/ethanchen7/Farmers-Market.git
-'''
+```
 
 2. Build the docker image (note the period (".") after "instance")
-'''
+```
 cd Farmers-Market
 docker build -t instance .
-'''
+```
 3. Run the container
-'''
+```
 docker run -it --rm instance
-'''
+```
 4. Test out the program!
